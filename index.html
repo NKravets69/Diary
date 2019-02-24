@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Ежедневник</title>
+</head>
+
+<body>
+    <h3>Ежедневник</h3>
+    <form name="dwsForm" class="form-style">
+        <label class="day"> День недели:</label>
+        <select name="days">
+            <option>Понедельник</option>
+            <option>Вторник</option>
+            <option>Среда</option>
+            <option>Четверг</option>
+            <option>Пятница</option>
+            <option>Суббота</option>
+            <option>Воскресенье</option>
+        </select><br><br>
+        <textarea name="message" cols="45" rows="5" placeholder="Напишите текст заметки..."></textarea><br>
+        <input class="btn-style-one" type="button" value="Отправить" onclick="btnClick();">
+        <input class="btn-style-two" type="button" value="Распечатать" onclick="prClick();">
+    </form>
+    <br>
+    <div id="diary"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
